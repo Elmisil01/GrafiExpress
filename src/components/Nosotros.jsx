@@ -60,11 +60,9 @@ const Nosotros = () => {
             Quiénes somos
           </p>
           <h2 className="text-4xl md:text-5xl font-black text-white leading-tight">
-            MÁS DE UNA DÉCADA
+            MÁS DE UNA DÉCADA <br />
+            <span className="text-azul-neon uppercase">EN LA GRÁFICA</span>
           </h2>
-          <div className="text-4xl md:text-5xl font-black leading-tight">
-            <span className="text-azul-neon">EN LA GRÁFICA</span>
-          </div>
 
           {/* Divisor — ajustar si el resto del sitio usa otro estilo */}
           <div className="flex items-center gap-2 mt-5">

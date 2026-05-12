@@ -28,6 +28,7 @@ function App() {
       <header className="bg-negro-profundo/50 backdrop-blur-xl border-b border-white/10 py-4 px-6 fixed w-full top-0 z-50 transition-all duration-500 hover:bg-negro-profundo/80">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <div className="flex flex-col justify-center">
+            {/* Medida recomendada para imagen de logo futura: Altura 40px, Ancho proporcional (aprox 160px-200px) */}
             <span className="text-2xl font-black tracking-tighter uppercase italic"><span className="text-rojo">GRAFI</span><span className="text-azul-express">EXPRESS</span></span>
           </div>
           <nav className="hidden md:flex gap-6 font-semibold">
