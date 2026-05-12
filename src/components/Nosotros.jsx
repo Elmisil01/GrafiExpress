@@ -34,6 +34,7 @@ const cards = [
 const servicios = [
   { label: "Ploteo vehicular", color: "orange" },
   { label: "Cartelería LED", color: "blue" },
+  { label: "Letras Corpóreas", color: "orange" },
   { label: "Vinilos Arlon", color: "orange" },
   { label: "Vidrieras", color: "blue" },
   { label: "Banners", color: "orange" },
