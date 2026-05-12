@@ -54,9 +54,10 @@ function App() {
               loop
               muted
               playsInline
-              className="absolute inset-0 w-full h-full object-cover video-background"
+              className="absolute inset-0 w-full h-full object-cover video-background hidden md:block"
             >
               <source src="/videos/video2.mp4" type="video/mp4" />
+              <track kind="captions" src="/videos/video2.vtt" srcLang="es" label="Español" default />
             </video>
             {/* Solo un degradado sutil por abajo para que los botones sigan siendo legibles */}
             <div className="absolute inset-0 bg-gradient-to-t from-negro-profundo/40 to-transparent"></div>
@@ -100,17 +101,32 @@ function App() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
-                { title: 'Ploteo Vehicular', border: 'border-azul-neon', img: '/images/ploteo.png', desc: 'Transformación y rotulación de flotas comerciales completas.' },
-                { title: 'Vidrieras y Locales', border: 'border-azul-express', img: '/images/vidrieras.png', desc: 'Decoración de fachadas con cortes de vinilo de alta visibilidad.' },
-                { title: 'Cartelería LED', border: 'border-rojo', img: '/images/carteleria.png', desc: 'Letras corpóreas 3D con iluminación para máxima exposición nocturna.' },
-                { title: 'Vinilos Arlon', border: 'border-azul-neon', img: '/images/vinilos.png', desc: 'Materiales Arlon líderes mundiales por su durabilidad y adherencia.' },
-                { title: 'Banners frontlight', border: 'border-azul-express', img: '/images/banners.png', desc: 'Impresiones en gran formato y alta definición para tus ofertas.' },
-                { title: 'Microperforados', border: 'border-rojo', img: '/images/microperforados.png', desc: 'Señalética industrial y vidrios decorados sin perder visión exterior.' },
+                { title: 'Ploteo Vehicular', border: 'border-azul-neon', imgBase: 'ploteo', alt: 'Ploteo vehicular - transformación de flotas comerciales', desc: 'Transformación y rotulación de flotas comerciales completas.' },
+                { title: 'Vidrieras y Locales', border: 'border-azul-express', imgBase: 'vidrieras', alt: 'Vidrieras y locales - decoración de fachadas con vinilo', desc: 'Decoración de fachadas con cortes de vinilo de alta visibilidad.' },
+                { title: 'Cartelería LED', border: 'border-rojo', imgBase: 'carteleria', alt: 'Cartelería LED - letras corpóreas 3D con iluminación', desc: 'Letras corpóreas 3D con iluminación para máxima exposición nocturna.' },
+                { title: 'Vinilos Arlon', border: 'border-azul-neon', imgBase: 'vinilos', alt: 'Vinilos Arlon - material premium para ploteos', desc: 'Materiales Arlon líderes mundiales por su durabilidad y adherencia.' },
+                { title: 'Banners frontlight', border: 'border-azul-express', imgBase: 'banners', alt: 'Banners frontlight - iluminación para máxima visibilidad', desc: 'Impresiones en gran formato y alta definición para tus ofertas.' },
+                { title: 'Microperforados', border: 'border-rojo', imgBase: 'microperforados', alt: 'Microperforados - vinilo para vidrieras con visión exterior', desc: 'Señalética industrial y vidrios decorados sin perder visión exterior.' },
               ].map((svc, i) => (
                 <div key={i} className={`bg-fondo/80 backdrop-blur-xl rounded-none md:rounded-3xl overflow-hidden border-t-2 ${svc.border} hover:-translate-y-3 transition-all duration-500 shadow-[0_15px_40px_rgba(0,0,0,0.6)] hover:shadow-[0_20px_50px_rgba(0,195,255,0.15)] group relative`}>
                   <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
                   <div className="relative h-56 overflow-hidden">
-                    <img src={svc.img} alt={svc.title} className="w-full h-full object-cover grayscale blur-[2px] opacity-40 group-hover:grayscale-[0.2] group-hover:blur-0 group-hover:opacity-100 group-hover:scale-110 transition-all duration-1000 ease-out" />
+                    <picture>
+                      <source
+                        srcSet={`/images/${svc.imgBase}-mobile.webp 332w, /images/${svc.imgBase}.webp 411w`}
+                        sizes="(max-width: 768px) 332px, 411px"
+                        type="image/webp"
+                      />
+                      <img
+                        src={`/images/${svc.imgBase}.webp`}
+                        alt={svc.alt}
+                        width={411}
+                        height={411}
+                        loading="lazy"
+                        decoding="async"
+                        className="w-full h-full object-cover grayscale blur-[2px] opacity-40 group-hover:grayscale-[0.2] group-hover:blur-0 group-hover:opacity-100 group-hover:scale-110 transition-all duration-1000 ease-out"
+                      />
+                    </picture>
                     <div className="absolute inset-0 bg-gradient-to-t from-fondo via-fondo/40 to-transparent"></div>
                   </div>
                   <div className="p-8 pt-0 relative z-10 -mt-12">
@@ -137,11 +153,11 @@ function App() {
             </div>
             <p className="text-gris-claro/60 mb-6">Calcos, Ploteos y Cartelería Profesional.</p>
             <div className="flex gap-4">
-              <a href="https://instagram.com/grafiexpresscalcos" target="_blank" rel="noreferrer" className="bg-azul-oscuro p-3 rounded-full hover:bg-azul-neon transition-colors text-white">
-                <Instagram size={20} />
+              <a href="https://instagram.com/grafiexpresscalcos" target="_blank" rel="noopener noreferrer" aria-label="Seguinos en Instagram" className="bg-azul-oscuro p-3 rounded-full hover:bg-azul-neon transition-colors text-white">
+                <Instagram size={20} aria-hidden="true" />
               </a>
-              <a href="https://facebook.com/GRAFIEXPRESS" target="_blank" rel="noreferrer" className="bg-azul-oscuro p-3 rounded-full hover:bg-azul-express transition-colors text-white">
-                <Facebook size={20} />
+              <a href="https://facebook.com/GRAFIEXPRESS" target="_blank" rel="noopener noreferrer" aria-label="Seguinos en Facebook" className="bg-azul-oscuro p-3 rounded-full hover:bg-azul-express transition-colors text-white">
+                <Facebook size={20} aria-hidden="true" />
               </a>
             </div>
           </div>
@@ -177,13 +193,14 @@ function App() {
                 marginWidth="0"
                 src="https://maps.google.com/maps?q=Empalme%20San%20Vicente,%20Buenos%20Aires&t=&z=14&ie=UTF8&iwloc=&output=embed"
                 title="Google Maps Ubicación"
+                loading="lazy"
                 className="opacity-90 grayscale hover:grayscale-0 transition-all duration-500"
               ></iframe>
             </div>
           </div>
         </div>
 
-        <div className="max-w-7xl mx-auto mt-16 pt-8 border-t border-azul-oscuro text-center text-gris-claro/40 text-sm flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="max-w-7xl mx-auto mt-16 pt-8 border-t border-azul-oscuro text-center text-gris-claro/60 text-sm flex flex-col md:flex-row justify-between items-center gap-4">
           <span>&copy; {new Date().getFullYear()} Grafiexpress. Todos los derechos reservados.</span>
           <span className="text-xs">
             echo por <a href="https://pablochamarez.com.ar" target="_blank" rel="noreferrer" className="hover:text-azul-neon transition-colors font-bold">pablochamarez.com.ar</a>
