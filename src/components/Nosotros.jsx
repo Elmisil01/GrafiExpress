@@ -62,9 +62,9 @@ const Nosotros = () => {
           <h2 className="text-4xl md:text-5xl font-black text-white leading-tight">
             MÁS DE UNA DÉCADA
           </h2>
-          <h2 className="text-4xl md:text-5xl font-black leading-tight">
+          <div className="text-4xl md:text-5xl font-black leading-tight">
             <span className="text-azul-neon">EN LA GRÁFICA</span>
-          </h2>
+          </div>
 
           {/* Divisor — ajustar si el resto del sitio usa otro estilo */}
           <div className="flex items-center gap-2 mt-5">

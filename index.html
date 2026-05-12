@@ -1,84 +1,294 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GrafiExpress — Ploteos &amp; Cartelería Profesional | San Vicente, Buenos Aires</title>
 
-  <!-- SEO -->
-  <meta name="description" content="GrafiExpress — Ploteos, cartelería y gráfica publicitaria en San Vicente, Buenos Aires. Ploteo vehicular, vidrieras, cartelería LED, vinilos Arlon, banners y microperforados. Presupuesto sin cargo." />
+  <!-- TÍTULO Y META DESCRIPTION (crítico para SEO) -->
+  <title>GrafiExpress — Ploteos &amp; Cartelería Profesional | San Vicente, Buenos Aires</title>
+  <meta name="description" content="GrafiExpress: ploteo vehicular, cartelería LED, vinilos Arlon, vidrieras y banners en San Vicente, zona sur del Gran Buenos Aires. Empresa familiar con más de una década en el rubro. Presupuesto sin cargo." />
+
+  <!-- CANONICAL -->
   <link rel="canonical" href="https://grafiexpress.vercel.app/" />
 
-  <!-- Open Graph -->
+  <!-- OPEN GRAPH -->
   <meta property="og:title" content="GrafiExpress — Ploteos &amp; Cartelería Profesional" />
-  <meta property="og:description" content="Soluciones gráficas premium en San Vicente, Buenos Aires. Ploteo vehicular, vidrieras, cartelería LED y más. Presupuesto sin cargo." />
-  <meta property="og:image" content="https://grafiexpress.vercel.app/images/hero-poster.webp" />
+  <meta property="og:description" content="Ploteo vehicular, cartelería LED, vinilos Arlon y más. San Vicente, zona sur GBA. Empresa familiar con más de una década en el rubro." />
   <meta property="og:url" content="https://grafiexpress.vercel.app/" />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="es_AR" />
+  <meta property="og:image" content="https://grafiexpress.vercel.app/images/hero-poster.webp" />
 
-  <!-- Twitter Card -->
+  <!-- TWITTER CARD -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="GrafiExpress — Ploteos &amp; Cartelería Profesional" />
-  <meta name="twitter:description" content="Soluciones gráficas premium en San Vicente, Buenos Aires." />
+  <meta name="twitter:title" content="GrafiExpress — Ploteos &amp; Cartelería" />
+  <meta name="twitter:description" content="Empresa gráfica en San Vicente GBA. Ploteo vehicular, cartelería LED, vinilos Arlon." />
   <meta name="twitter:image" content="https://grafiexpress.vercel.app/images/hero-poster.webp" />
 
-  <!-- Preconnect Google Maps -->
+  <!-- ROBOTS -->
+  <meta name="robots" content="index, follow" />
+
+  <!-- PRECONNECT para performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preconnect" href="https://www.google.com" />
   <link rel="preconnect" href="https://maps.googleapis.com" />
   <link rel="preconnect" href="https://maps.gstatic.com" crossorigin />
-</head>
 
-<body>
-  <div id="root"></div>
-  <script type="module" src="/src/main.jsx"></script>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
+  <!-- LocalBusiness Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "GrafiExpress",
-    "description": "Ploteos, cartelería y gráfica publicitaria profesional",
-    "url": "https://grafiexpress.vercel.app",
-    "telephone": "+5491154582487",
-    "email": "Grafi_express@hotmail.com",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Empalme San Vicente",
-      "addressRegion": "Buenos Aires",
-      "addressCountry": "AR"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": -35.0,
-      "longitude": -58.4
-    },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-      "opens": "09:00",
-      "closes": "18:00"
-    },
-    "sameAs": [
-      "https://instagram.com/grafiexpresscalcos",
-      "https://facebook.com/GRAFIEXPRESS"
-    ],
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Servicios Gráficos",
-      "itemListElement": [
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Ploteo Vehicular"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Vidrieras y Locales"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Cartelería LED"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Vinilos Arlon"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Banners Frontlight"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Microperforados"}}
-      ]
-    }
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://grafiexpress.vercel.app/#business",
+        "name": "GrafiExpress",
+        "alternateName": "Grafi Express Calcos",
+        "description": "Empresa familiar de gráfica publicitaria en San Vicente, Buenos Aires. Especializada en ploteo vehicular, cartelería LED, vinilos Arlon, vidrieras y banners.",
+        "url": "https://grafiexpress.vercel.app",
+        "telephone": "+5491154582487",
+        "email": "Grafi_express@hotmail.com",
+        "foundingDate": "2018",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://grafiexpress.vercel.app/favicon.svg"
+        },
+        "image": "https://grafiexpress.vercel.app/images/hero-poster.webp",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Empalme San Vicente",
+          "addressLocality": "San Vicente",
+          "addressRegion": "Buenos Aires",
+          "addressCountry": "AR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": -35.0,
+          "longitude": -58.4
+        },
+        "areaServed": [
+          "San Vicente",
+          "Cañuelas",
+          "Brandsen",
+          "La Plata",
+          "Zona Sur Gran Buenos Aires"
+        ],
+        "priceRange": "$$",
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Servicios Gráficos GrafiExpress",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Ploteo Vehicular",
+                "description": "Transformación y rotulación de flotas comerciales completas con vinilos de alta durabilidad."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Vidrieras y Locales",
+                "description": "Decoración de fachadas con cortes de vinilo de alta visibilidad para comercios."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Cartelería LED",
+                "description": "Letras corpóreas 3D con iluminación para máxima exposición nocturna."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Vinilos Arlon",
+                "description": "Material premium para ploteos de larga duración en exteriores."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Banners Frontlight",
+                "description": "Impresión de gran formato con iluminación frontal."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Microperforados",
+                "description": "Vinilo microperforado para vidrieras con visión exterior."
+              }
+            }
+          ]
+        },
+        "sameAs": [
+          "https://www.instagram.com/grafiexpresscalcos/",
+          "https://facebook.com/GRAFIEXPRESS"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://grafiexpress.vercel.app/#website",
+        "url": "https://grafiexpress.vercel.app",
+        "name": "GrafiExpress",
+        "description": "Ploteos y Cartelería Profesional en San Vicente, Buenos Aires",
+        "publisher": {
+          "@id": "https://grafiexpress.vercel.app/#business"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿En qué zona trabaja GrafiExpress?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "GrafiExpress trabaja en San Vicente y toda la zona sur del Gran Buenos Aires, incluyendo Cañuelas, Brandsen y La Plata. Coordinamos instalación en el lugar que necesitás."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cómo pido un presupuesto?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "El presupuesto es sin cargo. Podés contactarnos por teléfono al 011 15-5458-2487 o por email a Grafi_express@hotmail.com. Respondemos rápido."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué materiales usa GrafiExpress?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Trabajamos con vinilos Arlon, tintas UV y materiales certificados para exteriores. No usamos materiales de baja calidad — lo que instalamos tiene que durar."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Hacen ploteo de flotas de vehículos?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. GrafiExpress está especializada en ploteo vehicular, desde un calco simple hasta la rotulación completa de flotas comerciales."
+            }
+          }
+        ]
+      }
+    ]
   }
   </script>
+</head>
+<body>
+  <div id="root">
+    <!--
+      CONTENIDO ESTÁTICO PARA BOTS DE IA Y CRAWLERS
+      React reemplaza esto al hidratarse en el browser.
+      Los bots lo leen porque está en el HTML puro.
+    -->
+    <header>
+      <nav aria-label="Navegación principal">
+        <a href="/">
+          GrafiExpress — Ploteos y Cartelería
+        </a>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- H1 ÚNICO — crítico para SEO y AI visibility -->
+      <section id="inicio" aria-label="Inicio">
+        <h1>GrafiExpress — Ploteos &amp; Cartelería Profesional en San Vicente</h1>
+        <p>Soluciones gráficas para empresas y comercios en la zona sur del Gran Buenos Aires. Ploteo vehicular, cartelería LED, vinilos Arlon, vidrieras, banners y microperforados. Empresa familiar con más de una década en el rubro gráfico.</p>
+        <a href="https://wa.me/5491154582487">Contactar ahora</a>
+        <a href="#servicios">Ver trabajos</a>
+      </section>
+
+      <!-- NOSOTROS -->
+      <section id="nosotros" aria-label="Quiénes somos">
+        <h2>Más de una década en la gráfica</h2>
+        <p>GrafiExpress nació como un proyecto familiar en Empalme San Vicente y creció trabajo a trabajo, cliente a cliente. Lo que empezó con el padre en la gráfica se convirtió en un oficio que hoy maneja toda la familia, con el mismo nivel de exigencia desde el primer día.</p>
+        <p>Trabajamos con materiales de primera línea: vinilos Arlon, tintas UV y estructuras para exteriores que aguantan sol, lluvia y tiempo. Presupuesto cerrado, sin sorpresas.</p>
+        <ul>
+          <li>Empresa familiar con trayectoria — Habilitación Res. 5-E/2018</li>
+          <li>Materiales certificados: Vinilos Arlon, tintas UV para exteriores</li>
+          <li>Cobertura: San Vicente, Cañuelas, Brandsen, La Plata y zona sur GBA</li>
+          <li>Presupuesto sin cargo — sin costos ocultos</li>
+        </ul>
+      </section>
+
+      <!-- SERVICIOS -->
+      <section id="servicios" aria-label="Nuestros servicios">
+        <h2>Nuestros Servicios</h2>
+        <p>Soluciones premium con la mejor durabilidad gráfica.</p>
+        <ul>
+          <li>
+            <h3>Ploteo Vehicular</h3>
+            <p>Transformación y rotulación de flotas comerciales completas.</p>
+          </li>
+          <li>
+            <h3>Letras Corpóreas</h3>
+            <p>Letras en chapa, acrílico y polifan con acabados premium y alta durabilidad.</p>
+          </li>
+          <li>
+            <h3>Vidrieras y Locales</h3>
+            <p>Decoración de fachadas con cortes de vinilo de alta visibilidad.</p>
+          </li>
+          <li>
+            <h3>Cartelería LED</h3>
+            <p>Letras corpóreas 3D con iluminación para máxima exposición nocturna.</p>
+          </li>
+          <li>
+            <h3>Vinilos Arlon</h3>
+            <p>Material premium para ploteos de larga duración en exteriores.</p>
+          </li>
+          <li>
+            <h3>Banners Frontlight</h3>
+            <p>Impresión de gran formato con iluminación frontal para máxima visibilidad.</p>
+          </li>
+          <li>
+            <h3>Microperforados</h3>
+            <p>Vinilo microperforado para vidrieras con visión exterior desde adentro.</p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- CONTACTO -->
+      <section id="contacto" aria-label="Contacto">
+        <h2>Contacto</h2>
+        <address>
+          <p>Teléfono: <a href="tel:+5491154582487">011 15-5458-2487</a></p>
+          <p>Email: <a href="mailto:Grafi_express@hotmail.com">Grafi_express@hotmail.com</a></p>
+          <p>Ubicación: Empalme San Vicente, San Vicente, Zona Sur del Gran Buenos Aires</p>
+        </address>
+        <nav aria-label="Redes sociales">
+          <a href="https://instagram.com/grafiexpresscalcos" aria-label="GrafiExpress en Instagram" rel="noopener noreferrer">Instagram</a>
+          <a href="https://facebook.com/GRAFIEXPRESS" aria-label="GrafiExpress en Facebook" rel="noopener noreferrer">Facebook</a>
+        </nav>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 GrafiExpress. Todos los derechos reservados.</p>
+      <p>Hecho por <a href="https://pablochamarez.com.ar">pablochamarez.com.ar</a></p>
+    </footer>
+  </div>
+
+  <script type="module" src="/src/main.jsx"></script>
 </body>
+</html>
 
 </html>

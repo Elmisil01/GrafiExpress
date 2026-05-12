@@ -64,6 +64,7 @@ function App() {
             </video>
             {/* Solo un degradado sutil por abajo para que los botones sigan siendo legibles */}
             <div className="absolute inset-0 bg-gradient-to-t from-negro-profundo/40 to-transparent"></div>
+            <h1 className="sr-only">GrafiExpress — Ploteos &amp; Cartelería Profesional en San Vicente</h1>
           </div>
 
           <div className="absolute bottom-[-45px] landscape:bottom-4 md:bottom-[100px] left-1/2 -translate-x-1/2 z-10 w-full px-6 flex justify-center gap-3 max-w-[260px] landscape:max-w-none md:max-w-none flex-col landscape:flex-row md:flex-row">
@@ -207,6 +208,12 @@ function App() {
         </div>
 
         <div className="max-w-7xl mx-auto mt-16 pt-8 border-t border-azul-oscuro text-center text-gris-claro/60 text-sm flex flex-col md:flex-row justify-between items-center gap-4">
+          <div className="flex gap-6 mb-4 md:mb-0">
+            <a href="#inicio" className="hover:text-azul-neon transition-colors">Inicio</a>
+            <a href="#nosotros" className="hover:text-azul-neon transition-colors">Nosotros</a>
+            <a href="#servicios" className="hover:text-azul-neon transition-colors">Servicios</a>
+            <a href="#contacto" className="hover:text-azul-neon transition-colors">Contacto</a>
+          </div>
           <span>&copy; {new Date().getFullYear()} Grafiexpress. Todos los derechos reservados.</span>
           <span className="text-xs">
             echo por <a href="https://pablochamarez.com.ar" target="_blank" rel="noreferrer" className="hover:text-azul-neon transition-colors font-bold">pablochamarez.com.ar</a>

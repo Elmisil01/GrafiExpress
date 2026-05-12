@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+
+# Bots de IA — permitir explícitamente
+User-agent: GPTBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+Sitemap: https://grafiexpress.vercel.app/sitemap.xml
