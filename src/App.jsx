@@ -216,290 +216,291 @@ function App() {
         <Nosotros />
 
         {/* Services Grid */}
-        <section
-          id="servicios"
-          className="py-24 bg-negro-profundo px-6 relative overflow-hidden"
-        >
-          {/* Geometric Background CSS Effect */}
+        {/* Unified Services and Footer Plane */}
+        <div className="relative bg-black overflow-hidden">
+          {/* Unified Geometric Background */}
           <div className="absolute inset-0 z-0 pointer-events-none opacity-40">
-            <div className="absolute top-[-10%] left-[-10%] w-[60%] h-[120%] bg-negro-profundo rotate-[15deg] border-r border-azul-neon/30 shadow-[15px_0_40px_rgba(0,195,255,0.1)]"></div>
-            <div className="absolute top-[20%] left-[40%] w-[70%] h-[100%] bg-fondo -rotate-[10deg] border-l border-azul-neon/20 shadow-[-15px_0_40px_rgba(0,195,255,0.1)]"></div>
-            <div className="absolute top-[50%] left-[-20%] w-[100%] h-[60%] bg-negro-profundo rotate-[5deg] border-t border-azul-neon/30 shadow-[0_-15px_40px_rgba(0,195,255,0.1)]"></div>
-            <div className="absolute bottom-[-10%] right-[-5%] w-[50%] h-[80%] bg-fondo rotate-[25deg] border-l border-azul-neon/20 shadow-[-15px_0_40px_rgba(0,195,255,0.1)]"></div>
-            {/* Additional Sharp Lines */}
-            <div className="absolute top-[30%] left-0 w-full h-[1px] bg-azul-neon/20 rotate-[25deg] shadow-[0_0_10px_rgba(0,195,255,0.3)]"></div>
-            <div className="absolute top-[60%] left-0 w-full h-[1px] bg-azul-neon/10 -rotate-[15deg] shadow-[0_0_10px_rgba(0,195,255,0.2)]"></div>
+            {/* Main Long Plates */}
+            <div className="absolute top-[-5%] left-[-10%] w-[70%] h-[110%] bg-negro-profundo rotate-[12deg] border-r border-azul-neon/20 shadow-[20px_0_60px_rgba(0,195,255,0.1)]"></div>
+            <div className="absolute top-[15%] right-[-10%] w-[60%] h-[100%] bg-fondo -rotate-[8deg] border-l border-azul-neon/15 shadow-[-20px_0_50px_rgba(0,195,255,0.08)]"></div>
+            <div className="absolute bottom-[-10%] left-[-20%] w-[110%] h-[50%] bg-negro-profundo rotate-[4deg] border-t border-azul-neon/20 shadow-[0_-20px_50px_rgba(0,195,255,0.1)]"></div>
+            
+            {/* Long Sharp Accent Lines */}
+            <div className="absolute top-[20%] left-0 w-full h-[1px] bg-azul-neon/20 rotate-[15deg] shadow-[0_0_15px_rgba(0,195,255,0.3)]"></div>
+            <div className="absolute bottom-[30%] left-0 w-full h-[1px] bg-azul-neon/15 -rotate-[10deg] shadow-[0_0_15px_rgba(0,195,255,0.2)]"></div>
           </div>
 
-          <div className="max-w-7xl mx-auto relative z-10">
-            <div className="mb-20 text-center relative">
-              {/* Resplandor ambiental trasero */}
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[100px] bg-azul-neon/10 blur-[80px] rounded-full pointer-events-none"></div>
+          {/* Overlay to darken and unify */}
+          <div className="absolute inset-0 bg-black/40 z-[1] pointer-events-none"></div>
 
-              <h2 className="text-4xl md:text-6xl font-black mb-6 tracking-tighter relative z-10 leading-none flex flex-wrap justify-center gap-x-4">
-                <span className="text-white">NUESTROS</span>
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-azul-neon via-azul-express to-rojo drop-shadow-[0_0_15px_rgba(0,195,255,0.3)]">
-                  SERVICIOS
-                </span>
-              </h2>
-              <p className="text-lg md:text-xl text-gris-claro/60 max-w-2xl mx-auto relative z-10 font-medium tracking-wide">
-                Soluciones premium con la mejor durabilidad gráfica.
-              </p>
+          {/* Services Grid */}
+          <section
+            id="servicios"
+            className="py-24 px-6 relative z-10"
+          >
+            <div className="max-w-7xl mx-auto relative">
+              <div className="mb-20 text-center relative">
+                {/* Resplandor ambiental trasero */}
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[100px] bg-azul-neon/10 blur-[80px] rounded-full pointer-events-none"></div>
 
-              {/* Línea moderna decorativa */}
-              <div className="mt-10 flex justify-center items-center gap-4 relative z-10">
-                <div className="h-[2px] w-16 bg-gradient-to-r from-transparent to-azul-neon/50 rounded-full"></div>
-                <div className="w-2.5 h-2.5 rounded-full bg-azul-neon shadow-[0_0_12px_#00C3FF]"></div>
-                <div className="h-[2px] w-16 bg-gradient-to-l from-transparent to-azul-neon/50 rounded-full"></div>
+                <h2 className="text-4xl md:text-6xl font-black mb-6 tracking-tighter relative z-10 leading-none flex flex-wrap justify-center gap-x-4">
+                  <span className="text-white">NUESTROS</span>
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-azul-neon via-azul-express to-rojo drop-shadow-[0_0_15px_rgba(0,195,255,0.3)]">
+                    SERVICIOS
+                  </span>
+                </h2>
+                <p className="text-lg md:text-xl text-gris-claro/60 max-w-2xl mx-auto relative z-10 font-medium tracking-wide">
+                  Soluciones premium con la mejor durabilidad gráfica.
+                </p>
+
+                {/* Línea moderna decorativa */}
+                <div className="mt-10 flex justify-center items-center gap-4 relative z-10">
+                  <div className="h-[2px] w-16 bg-gradient-to-r from-transparent to-azul-neon/50 rounded-full"></div>
+                  <div className="w-2.5 h-2.5 rounded-full bg-azul-neon shadow-[0_0_12px_#00C3FF]"></div>
+                  <div className="h-[2px] w-16 bg-gradient-to-l from-transparent to-azul-neon/50 rounded-full"></div>
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                {[
+                  {
+                    title: "Ploteo Vehicular",
+                    border: "border-azul-neon",
+                    pixelColors: "#00C3FF,#001F3F,#00C3FF",
+                    imgBase: "ploteo",
+                    alt: "Ploteo vehicular - transformación de flotas comerciales",
+                    desc: "Transformación y rotulación de flotas comerciales completas.",
+                  },
+                  {
+                    title: "Letras Corpóreas",
+                    border: "border-azul-neon",
+                    pixelColors: "#00C3FF,#001F3F,#00C3FF",
+                    imgBase: "letras-corporeas",
+                    alt: "Letras corpóreas en chapa, acrílico y polifan",
+                    desc: "Letras en chapa, acrílico y polifan con acabados premium y alta durabilidad.",
+                  },
+                  {
+                    title: "Vidrieras y Locales",
+                    border: "border-azul-express",
+                    pixelColors: "#0066FF,#001F3F,#0066FF",
+                    imgBase: "vidrieras",
+                    alt: "Vidrieras y locales - decoración de fachadas con vinilo",
+                    desc: "Decoración de fachadas con cortes de vinilo de alta visibilidad.",
+                  },
+                  {
+                    title: "Cartelería LED",
+                    border: "border-rojo",
+                    pixelColors: "#FF2D2D,#001F3F,#FF2D2D",
+                    imgBase: "carteleria",
+                    alt: "Cartelería LED - letras corpóreas 3D con iluminación",
+                    desc: "Letras corpóreas 3D con iluminación para máxima exposición nocturna.",
+                  },
+                  {
+                    title: "Vinilos Arlon",
+                    border: "border-azul-neon",
+                    pixelColors: "#00C3FF,#001F3F,#00C3FF",
+                    imgBase: "vinilos",
+                    alt: "Vinilos Arlon - material premium para ploteos",
+                    desc: "Materiales Arlon líderes mundiales por su durabilidad y adherencia.",
+                  },
+                  {
+                    title: "Banners frontlight",
+                    border: "border-azul-express",
+                    pixelColors: "#0066FF,#001F3F,#0066FF",
+                    imgBase: "banners",
+                    alt: "Banners frontlight - iluminación para máxima visibilidad",
+                    desc: "Impresiones en gran formato y alta definición para tus ofertas.",
+                  },
+                  {
+                    title: "Microperforados",
+                    border: "border-rojo",
+                    pixelColors: "#FF2D2D,#001F3F,#FF2D2D",
+                    imgBase: "microperforados",
+                    alt: "Microperforados - vinilo para vidrieras con visión exterior",
+                    desc: "Señalética industrial y vidrios decorados sin perder visión exterior.",
+                  },
+                ].map((svc, i) => (
+                  <PixelCard
+                    key={i}
+                    colors={svc.pixelColors}
+                    gap={10}
+                    speed={30}
+                    className={`bg-fondo/80 backdrop-blur-xl rounded-none md:rounded-3xl overflow-hidden border-t-2 ${svc.border} hover:-translate-y-3 transition-all duration-500 shadow-[0_15px_40px_rgba(0,0,0,0.6)] hover:shadow-[0_20px_50px_rgba(0,195,255,0.15)] group relative`}
+                  >
+                    <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
+                    <div className="relative h-56 overflow-hidden">
+                      <picture>
+                        <source
+                          srcSet={`/images/${svc.imgBase}-mobile.webp 332w`}
+                          media="(max-width: 768px)"
+                          width={332}
+                          height={332}
+                          type="image/webp"
+                        />
+                        <source
+                          srcSet={`/images/${svc.imgBase}.webp 411w`}
+                          width={411}
+                          height={411}
+                          type="image/webp"
+                        />
+                        <img
+                          src={`/images/${svc.imgBase}.webp`}
+                          alt={svc.alt}
+                          width={411}
+                          height={411}
+                          loading="lazy"
+                          decoding="async"
+                          className="w-full h-full object-cover grayscale blur-[2px] opacity-40 group-hover:grayscale-[0.2] group-hover:blur-0 group-hover:opacity-100 group-hover:scale-110 transition-all duration-1000 ease-out"
+                        />
+                      </picture>
+                      <div className="absolute inset-0 bg-gradient-to-t from-fondo via-fondo/40 to-transparent"></div>
+                    </div>
+                    <div className="p-8 pt-0 relative z-10 -mt-12">
+                      <h3 className="text-2xl font-black mb-3 text-white drop-shadow-md">
+                        {svc.title}
+                      </h3>
+                      <p className="text-gris-claro/50 mb-8 text-sm leading-relaxed group-hover:text-gris-claro/80 transition-colors duration-500">
+                        {svc.desc}
+                      </p>
+                      <a
+                        href="https://wa.me/5491154582487"
+                        className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/5 backdrop-blur-sm border border-white/10 text-azul-neon font-bold text-sm tracking-wide group-hover:bg-azul-neon/10 group-hover:border-azul-neon/30 transition-all duration-300"
+                      >
+                        <PlusCircle size={16} /> Cotizar Proyecto
+                      </a>
+                    </div>
+                  </PixelCard>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          {/* Footer */}
+          <footer
+            id="contacto"
+            className="py-10 px-6 relative z-10 border-t border-white/5"
+          >
+            {/* Capa negra transparente específica para el footer */}
+            <div className="absolute inset-0 bg-black/70 z-0 pointer-events-none"></div>
+            
+            <div className="absolute top-0 right-0 w-[300px] h-[300px] bg-rojo rounded-full blur-[150px] opacity-5"></div>
+            <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 relative z-10">
+              <div>
+                <div className="mb-6">
+                  <span className="text-xl font-black tracking-tighter uppercase italic">
+                    <span className="text-rojo">GRAFI</span>
+                    <span className="text-azul-express">EXPRESS</span>
+                  </span>
+                </div>
+                <p className="text-gris-claro/60 mb-6">
+                  Calcos, Ploteos y Cartelería Profesional.
+                </p>
+                <div className="flex gap-4">
+                  <a
+                    href="https://instagram.com/grafiexpresscalcos"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Seguinos en Instagram"
+                    className="bg-azul-oscuro p-3 rounded-full hover:bg-azul-neon transition-colors text-white"
+                  >
+                    <Instagram size={20} aria-hidden="true" />
+                  </a>
+                  <a
+                    href="https://facebook.com/GRAFIEXPRESS"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Seguinos en Facebook"
+                    className="bg-azul-oscuro p-3 rounded-full hover:bg-azul-express transition-colors text-white"
+                  >
+                    <Facebook size={20} aria-hidden="true" />
+                  </a>
+                </div>
+              </div>
+
+              <div>
+                <h4 className="text-xl font-bold mb-6">Contacto Directo</h4>
+                <ul className="space-y-4">
+                  <li className="flex items-center gap-3">
+                    <Phone size={18} className="text-azul-neon" />
+                    <a
+                      href="https://wa.me/5491154582487"
+                      className="hover:text-azul-neon transition-colors"
+                    >
+                      011 15-5458-2487 (Principal)
+                    </a>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <Mail size={18} className="text-azul-express" />
+                    <a
+                      href="mailto:Grafi_express@hotmail.com"
+                      className="hover:text-azul-express transition-colors"
+                    >
+                      Grafi_express@hotmail.com
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="flex flex-col">
+                <h4 className="text-xl font-bold mb-6">Ubicación</h4>
+                <div className="flex items-start gap-3">
+                  <MapPin size={24} className="text-rojo shrink-0 mt-1" />
+                  <p>
+                    Empalme San Vicente <br />
+                    <span className="text-gris-claro/60">
+                      San Vicente, Zona Sur del Gran Buenos Aires
+                    </span>
+                  </p>
+                </div>
               </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {[
-                {
-                  title: "Ploteo Vehicular",
-                  border: "border-azul-neon",
-                  pixelColors: "#00C3FF,#001F3F,#00C3FF",
-                  imgBase: "ploteo",
-                  alt: "Ploteo vehicular - transformación de flotas comerciales",
-                  desc: "Transformación y rotulación de flotas comerciales completas.",
-                },
-                {
-                  title: "Letras Corpóreas",
-                  border: "border-azul-neon",
-                  pixelColors: "#00C3FF,#001F3F,#00C3FF",
-                  imgBase: "letras-corporeas",
-                  alt: "Letras corpóreas en chapa, acrílico y polifan",
-                  desc: "Letras en chapa, acrílico y polifan con acabados premium y alta durabilidad.",
-                },
-                {
-                  title: "Vidrieras y Locales",
-                  border: "border-azul-express",
-                  pixelColors: "#0066FF,#001F3F,#0066FF",
-                  imgBase: "vidrieras",
-                  alt: "Vidrieras y locales - decoración de fachadas con vinilo",
-                  desc: "Decoración de fachadas con cortes de vinilo de alta visibilidad.",
-                },
-                {
-                  title: "Cartelería LED",
-                  border: "border-rojo",
-                  pixelColors: "#FF2D2D,#001F3F,#FF2D2D",
-                  imgBase: "carteleria",
-                  alt: "Cartelería LED - letras corpóreas 3D con iluminación",
-                  desc: "Letras corpóreas 3D con iluminación para máxima exposición nocturna.",
-                },
-                {
-                  title: "Vinilos Arlon",
-                  border: "border-azul-neon",
-                  pixelColors: "#00C3FF,#001F3F,#00C3FF",
-                  imgBase: "vinilos",
-                  alt: "Vinilos Arlon - material premium para ploteos",
-                  desc: "Materiales Arlon líderes mundiales por su durabilidad y adherencia.",
-                },
-                {
-                  title: "Banners frontlight",
-                  border: "border-azul-express",
-                  pixelColors: "#0066FF,#001F3F,#0066FF",
-                  imgBase: "banners",
-                  alt: "Banners frontlight - iluminación para máxima visibilidad",
-                  desc: "Impresiones en gran formato y alta definición para tus ofertas.",
-                },
-                {
-                  title: "Microperforados",
-                  border: "border-rojo",
-                  pixelColors: "#FF2D2D,#001F3F,#FF2D2D",
-                  imgBase: "microperforados",
-                  alt: "Microperforados - vinilo para vidrieras con visión exterior",
-                  desc: "Señalética industrial y vidrios decorados sin perder visión exterior.",
-                },
-              ].map((svc, i) => (
-                <PixelCard
-                  key={i}
-                  colors={svc.pixelColors}
-                  gap={10}
-                  speed={30}
-                  className={`bg-fondo/80 backdrop-blur-xl rounded-none md:rounded-3xl overflow-hidden border-t-2 ${svc.border} hover:-translate-y-3 transition-all duration-500 shadow-[0_15px_40px_rgba(0,0,0,0.6)] hover:shadow-[0_20px_50px_rgba(0,195,255,0.15)] group relative`}
-                >
-                  <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
-                  <div className="relative h-56 overflow-hidden">
-                    <picture>
-                      <source
-                        srcSet={`/images/${svc.imgBase}-mobile.webp 332w`}
-                        media="(max-width: 768px)"
-                        width={332}
-                        height={332}
-                        type="image/webp"
-                      />
-                      <source
-                        srcSet={`/images/${svc.imgBase}.webp 411w`}
-                        width={411}
-                        height={411}
-                        type="image/webp"
-                      />
-                      <img
-                        src={`/images/${svc.imgBase}.webp`}
-                        alt={svc.alt}
-                        width={411}
-                        height={411}
-                        loading="lazy"
-                        decoding="async"
-                        className="w-full h-full object-cover grayscale blur-[2px] opacity-40 group-hover:grayscale-[0.2] group-hover:blur-0 group-hover:opacity-100 group-hover:scale-110 transition-all duration-1000 ease-out"
-                      />
-                    </picture>
-                    <div className="absolute inset-0 bg-gradient-to-t from-fondo via-fondo/40 to-transparent"></div>
-                  </div>
-                  <div className="p-8 pt-0 relative z-10 -mt-12">
-                    <h3 className="text-2xl font-black mb-3 text-white drop-shadow-md">
-                      {svc.title}
-                    </h3>
-                    <p className="text-gris-claro/50 mb-8 text-sm leading-relaxed group-hover:text-gris-claro/80 transition-colors duration-500">
-                      {svc.desc}
-                    </p>
-                    <a
-                      href="https://wa.me/5491154582487"
-                      className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/5 backdrop-blur-sm border border-white/10 text-azul-neon font-bold text-sm tracking-wide group-hover:bg-azul-neon/10 group-hover:border-azul-neon/30 transition-all duration-300"
-                    >
-                      <PlusCircle size={16} /> Cotizar Proyecto
-                    </a>
-                  </div>
-                </PixelCard>
-              ))}
-            </div>
-          </div>
-        </section>
-      </main>
-
-      {/* Footer */}
-      <footer
-        id="contacto"
-        className="bg-black border-t border-azul-oscuro py-10 px-6 relative overflow-hidden"
-      >
-        {/* Overlapping Geometric Plates */}
-        <div className="absolute inset-0 z-0 pointer-events-none opacity-45">
-          <div className="absolute top-0 right-0 w-[80%] h-full bg-fondo -skew-x-12 border-l border-azul-neon/30 shadow-[-20px_0_40px_rgba(0,195,255,0.1)]"></div>
-          <div className="absolute bottom-0 left-0 w-[60%] h-[40%] bg-negro-profundo skew-y-3 border-t border-azul-neon/20 shadow-[0_-15px_30px_rgba(0,195,255,0.1)]"></div>
-          <div className="absolute top-[20%] left-[-10%] w-[40%] h-[120%] bg-fondo rotate-12 border-r border-azul-neon/20 shadow-[15px_0_30px_rgba(0,195,255,0.1)]"></div>
-        </div>
-
-        {/* Capa de color negro transparente por delante del fondo */}
-        <div className="absolute inset-0 bg-black/60 z-[1] pointer-events-none"></div>
-
-        <div className="absolute top-0 right-0 w-[300px] h-[300px] bg-rojo rounded-full blur-[150px] opacity-5"></div>
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 relative z-10">
-          <div>
-            <div className="mb-6">
-              <span className="text-xl font-black tracking-tighter uppercase italic">
-                <span className="text-rojo">GRAFI</span>
-                <span className="text-azul-express">EXPRESS</span>
-              </span>
-            </div>
-            <p className="text-gris-claro/60 mb-6">
-              Calcos, Ploteos y Cartelería Profesional.
-            </p>
-            <div className="flex gap-4">
-              <a
-                href="https://instagram.com/grafiexpresscalcos"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Seguinos en Instagram"
-                className="bg-azul-oscuro p-3 rounded-full hover:bg-azul-neon transition-colors text-white"
-              >
-                <Instagram size={20} aria-hidden="true" />
-              </a>
-              <a
-                href="https://facebook.com/GRAFIEXPRESS"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Seguinos en Facebook"
-                className="bg-azul-oscuro p-3 rounded-full hover:bg-azul-express transition-colors text-white"
-              >
-                <Facebook size={20} aria-hidden="true" />
-              </a>
-            </div>
-          </div>
-
-          <div>
-            <h4 className="text-xl font-bold mb-6">Contacto Directo</h4>
-            <ul className="space-y-4">
-              <li className="flex items-center gap-3">
-                <Phone size={18} className="text-azul-neon" />
+            <div className="max-w-7xl mx-auto mt-8 pt-8 border-t border-white/10 text-center text-gris-claro/60 text-sm flex flex-col md:flex-row justify-between items-center gap-4 relative z-10">
+              <div className="flex gap-6 mb-4 md:mb-0">
                 <a
-                  href="https://wa.me/5491154582487"
+                  href="#inicio"
                   className="hover:text-azul-neon transition-colors"
                 >
-                  011 15-5458-2487 (Principal)
+                  Inicio
                 </a>
-              </li>
-              <li className="flex items-center gap-3">
-                <Mail size={18} className="text-azul-express" />
                 <a
-                  href="mailto:Grafi_express@hotmail.com"
-                  className="hover:text-azul-express transition-colors"
+                  href="#nosotros"
+                  className="hover:text-azul-neon transition-colors"
                 >
-                  Grafi_express@hotmail.com
+                  Nosotros
                 </a>
-              </li>
-            </ul>
-          </div>
-
-          <div className="flex flex-col">
-            <h4 className="text-xl font-bold mb-6">Ubicación</h4>
-            <div className="flex items-start gap-3">
-              <MapPin size={24} className="text-rojo shrink-0 mt-1" />
-              <p>
-                Empalme San Vicente <br />
-                <span className="text-gris-claro/60">
-                  San Vicente, Zona Sur del Gran Buenos Aires
-                </span>
-              </p>
+                <a
+                  href="#servicios"
+                  className="hover:text-azul-neon transition-colors"
+                >
+                  Servicios
+                </a>
+                <a
+                  href="#contacto"
+                  className="hover:text-azul-neon transition-colors"
+                >
+                  Contacto
+                </a>
+              </div>
+              <span>
+                &copy; {new Date().getFullYear()} Grafiexpress. Todos los
+                derechos reservados.
+              </span>
+              <span className="text-xs">
+                Diseño por{" "}
+                <a
+                  href="https://pablochamarez.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:text-azul-neon transition-colors font-bold"
+                >
+                  pablochamarez.com
+                </a>
+              </span>
             </div>
-          </div>
+          </footer>
         </div>
-
-        <div className="max-w-7xl mx-auto mt-8 pt-8 border-t border-azul-oscuro text-center text-gris-claro/60 text-sm flex flex-col md:flex-row justify-between items-center gap-4">
-          <div className="flex gap-6 mb-4 md:mb-0">
-            <a
-              href="#inicio"
-              className="hover:text-azul-neon transition-colors"
-            >
-              Inicio
-            </a>
-            <a
-              href="#nosotros"
-              className="hover:text-azul-neon transition-colors"
-            >
-              Nosotros
-            </a>
-            <a
-              href="#servicios"
-              className="hover:text-azul-neon transition-colors"
-            >
-              Servicios
-            </a>
-            <a
-              href="#contacto"
-              className="hover:text-azul-neon transition-colors"
-            >
-              Contacto
-            </a>
-          </div>
-          <span>
-            &copy; {new Date().getFullYear()} Grafiexpress. Todos los derechos
-            reservados.
-          </span>
-          <span className="text-xs">
-            Diseño por{" "}
-            <a
-              href="https://pablochamarez.com"
-              target="_blank"
-              rel="noreferrer"
-              className="hover:text-azul-neon transition-colors font-bold"
-            >
-              pablochamarez.com
-            </a>
-          </span>
-        </div>
-      </footer>
+      </main>
     </div>
   );
 }
