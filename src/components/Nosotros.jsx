@@ -47,10 +47,11 @@ const Nosotros = () => {
       id="nosotros"
       className="bg-fondo py-20 px-6 relative overflow-hidden"
     >
-      {/* Decoración de fondo — igual al resto del sitio */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-0 left-1/4 w-96 h-96 bg-azul-oscuro/20 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-naranja/5 rounded-full blur-3xl" />
+      {/* Decoración geométrica de placas (Estilo unificado) */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden opacity-35">
+        <div className="absolute top-0 left-0 w-[70%] h-full bg-azul-oscuro/20 skew-x-12 border-r border-azul-neon/20 shadow-[15px_0_40px_rgba(0,195,255,0.05)]"></div>
+        <div className="absolute top-[10%] right-[-5%] w-[50%] h-[120%] bg-fondo -rotate-6 border-l border-azul-neon/10 shadow-[-15px_0_30px_rgba(0,195,255,0.05)]"></div>
+        <div className="absolute bottom-[-10%] left-[20%] w-[80%] h-[40%] bg-azul-oscuro/10 -skew-y-3 border-t border-azul-neon/20 shadow-[0_-15px_30px_rgba(0,195,255,0.05)]"></div>
       </div>
 
       <div className="max-w-6xl mx-auto relative z-10">
