@@ -1,6 +1,8 @@
 import React from "react";
 import Nosotros from "./components/Nosotros";
 import PixelCard from "./components/PixelCard";
+import FAQ from "./components/FAQ";
+import WhatsAppButton from "./components/WhatsAppButton";
 
 const PlusCircle = ({ size = 24, className = "", ...props }) => (
   <svg
@@ -139,6 +141,12 @@ function App() {
               className="hover:text-azul-neon transition-colors"
             >
               Servicios
+            </a>
+            <a
+              href="#faq"
+              className="hover:text-azul-neon transition-colors"
+            >
+              FAQ
             </a>
             <a
               href="#contacto"
@@ -375,6 +383,8 @@ function App() {
             </div>
           </section>
 
+          <FAQ />
+
           {/* Footer */}
           <footer
             id="contacto"
@@ -455,7 +465,7 @@ function App() {
               </div>
             </div>
 
-            <div className="max-w-7xl mx-auto mt-8 pt-8 border-t border-white/10 text-center text-gris-claro/60 text-sm flex flex-col md:flex-row justify-between items-center gap-4 relative z-10">
+            <div className="max-w-7xl mx-auto mt-8 pt-8 border-t border-white/10 text-center text-gris-claro/80 text-sm flex flex-col md:flex-row justify-between items-center gap-4 relative z-10">
               <div className="flex gap-6 mb-4 md:mb-0">
                 <a
                   href="#inicio"
@@ -476,6 +486,12 @@ function App() {
                   Servicios
                 </a>
                 <a
+                  href="#faq"
+                  className="hover:text-azul-neon transition-colors"
+                >
+                  FAQ
+                </a>
+                <a
                   href="#contacto"
                   className="hover:text-azul-neon transition-colors"
                 >
@@ -486,7 +502,7 @@ function App() {
                 &copy; {new Date().getFullYear()} Grafiexpress. Todos los
                 derechos reservados.
               </span>
-              <span className="text-xs">
+              <span className="text-gris-claro text-xs">
                 Diseño por{" "}
                 <a
                   href="https://pablochamarez.com"
@@ -501,6 +517,7 @@ function App() {
           </footer>
         </div>
       </main>
+      <WhatsAppButton />
     </div>
   );
 }

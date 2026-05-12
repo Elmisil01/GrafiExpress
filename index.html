@@ -187,11 +187,10 @@
 <body style="background-color: #0A1328; color: white; margin: 0;">
   <div id="root">
     <!--
-      CONTENIDO ESTÁTICO PARA BOTS DE IA Y CRAWLERS
-      Se oculta visualmente para evitar el "latigazo" (FOUC) durante la hidratación de React.
-      Los bots de IA lo siguen leyendo en el HTML.
+      CONTENIDO ESTÁTICO PARA BOTS DE IA Y CRAWLERS.
+      React reemplaza este bloque al hidratarse. En browsers, la espera es de milisegundos.
     -->
-    <div style="display: none;" aria-hidden="true">
+    <div style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;">
       <header>
         <nav aria-label="Navegación principal">
           <a href="/">
@@ -201,6 +200,7 @@
             <li><a href="#inicio">Inicio</a></li>
             <li><a href="#nosotros">Nosotros</a></li>
             <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#faq">FAQ</a></li>
             <li><a href="#contacto">Contacto</a></li>
           </ul>
         </nav>
@@ -262,6 +262,23 @@
               <p>Vinilo microperforado para vidrieras con visión exterior desde adentro.</p>
             </li>
           </ul>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" aria-label="Preguntas frecuentes">
+          <h2>Preguntas frecuentes</h2>
+          <dl>
+            <dt>¿En qué zona trabajan?</dt>
+            <dd>Trabajamos en San Vicente y toda la zona sur del Gran Buenos Aires: Cañuelas, Brandsen, La Plata y alrededores. Coordinamos la instalación en el lugar que necesitás.</dd>
+            <dt>¿El presupuesto tiene costo?</dt>
+            <dd>No. El presupuesto es sin cargo. Lo que acordamos es lo que se cobra — sin costos ocultos ni sorpresas al final del trabajo.</dd>
+            <dt>¿Qué materiales usan?</dt>
+            <dd>Trabajamos con vinilos Arlon, tintas UV y materiales certificados para exteriores. No usamos materiales de baja calidad — lo que instalamos tiene que durar.</dd>
+            <dt>¿Hacen ploteo de flotas completas?</dt>
+            <dd>Sí. Desde el calco de una moto hasta la rotulación completa de flotas de camiones. Cada trabajo tiene el mismo cuidado, sin importar el tamaño.</dd>
+            <dt>¿Cuánto tarda un ploteo vehicular?</dt>
+            <dd>Un ploteo parcial puede estar listo en 24-48 horas. Siempre acordamos el plazo antes de empezar.</dd>
+          </dl>
         </section>
 
         <!-- CONTACTO -->
