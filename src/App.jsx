@@ -115,7 +115,7 @@ function App() {
   return (
     <div className="min-h-screen flex flex-col">
       {/* Header */}
-      <header className="bg-negro-profundo/50 backdrop-blur-xl border-b border-white/10 py-4 px-6 sticky top-0 z-50 transition-all duration-500 hover:bg-negro-profundo/80">
+      <header className="bg-negro-profundo/50 backdrop-blur-xl border-b border-white/10 py-4 px-6 fixed w-full top-0 z-50 transition-all duration-500 hover:bg-negro-profundo/80">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <div className="flex flex-col justify-center">
             {/* Medida recomendada para imagen de logo futura: Altura 40px, Ancho proporcional (aprox 160px-200px) */}
@@ -157,9 +157,9 @@ function App() {
           </a>
         </div>
       </header>
-
+ 
       {/* Hero */}
-      <main className="flex-1">
+      <main className="flex-1 pt-[122px]">
         <section
           id="inicio"
           className="relative w-full h-[35vh] landscape:h-[70vh] md:h-screen overflow-visible md:overflow-hidden flex flex-col justify-center items-center"
