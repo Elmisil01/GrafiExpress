@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@theme {
+  --color-fondo: #0A1328;
+  --color-azul-oscuro: #001F3F;
+  --color-azul-neon: #00C3FF;
+  --color-rojo: #FF2D2D;
+  --color-azul-express: #0066FF;
+  --color-gris-claro: #E0F0FF;
+  --color-negro-profundo: #050A14;
+}
+
+/* Responsividad General */
+body {
+  background-color: var(--color-fondo);
+  color: var(--color-gris-claro);
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  overflow-x: hidden; /* Evita desbordamiento horizontal en móviles */
+}
+
+/* Tratamiento de Video Responsivo */
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Solo si el video es de fondo (Background Video) */
+.video-background {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* Media Queries específicas (320px - 480px) */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  h1, h2 {
+    font-size: 2rem !important;
+    line-height: 1.2 !important;
+  }
+  
+  .container, .max-w-7xl {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  button, a {
+    min-height: 48px; /* Target táctil recomendado */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Reducir espaciados */
+  .py-24 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+}
+
+/* Media Queries específicas (768px - 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  h1, h2 {
+    font-size: 3rem !important;
+  }
+
+  .grid {
+    gap: 1.5rem !important;
+  }
+}
+
+/* Asegurar que las imágenes no se desborden */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
