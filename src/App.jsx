@@ -1,5 +1,6 @@
 import React from 'react'
 import Nosotros from './components/Nosotros'
+import PixelCard from './components/PixelCard'
 
 
 const PlusCircle = ({ size = 24, className = "", ...props }) => (
@@ -91,9 +92,9 @@ function App() {
               {/* Resplandor ambiental trasero */}
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[100px] bg-azul-neon/10 blur-[80px] rounded-full pointer-events-none"></div>
 
-              <h2 className="text-4xl md:text-6xl font-black mb-6 tracking-tighter relative z-10 leading-none">
-                NUESTROS
-                <span className="block mt-2 text-transparent bg-clip-text bg-gradient-to-r from-azul-neon via-azul-express to-rojo drop-shadow-[0_0_15px_rgba(0,195,255,0.3)]">
+              <h2 className="text-4xl md:text-6xl font-black mb-6 tracking-tighter relative z-10 leading-none flex flex-wrap justify-center gap-x-4">
+                <span className="text-white">NUESTROS</span>
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-azul-neon via-azul-express to-rojo drop-shadow-[0_0_15px_rgba(0,195,255,0.3)]">
                   SERVICIOS
                 </span>
               </h2>
@@ -111,15 +112,21 @@ function App() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
-                { title: 'Ploteo Vehicular', border: 'border-azul-neon', imgBase: 'ploteo', alt: 'Ploteo vehicular - transformación de flotas comerciales', desc: 'Transformación y rotulación de flotas comerciales completas.' },
-                { title: 'Letras Corpóreas', border: 'border-azul-neon', imgBase: 'letras-corporeas', alt: 'Letras corpóreas en chapa, acrílico y polifan', desc: 'Letras en chapa, acrílico y polifan con acabados premium y alta durabilidad.' },
-                { title: 'Vidrieras y Locales', border: 'border-azul-express', imgBase: 'vidrieras', alt: 'Vidrieras y locales - decoración de fachadas con vinilo', desc: 'Decoración de fachadas con cortes de vinilo de alta visibilidad.' },
-                { title: 'Cartelería LED', border: 'border-rojo', imgBase: 'carteleria', alt: 'Cartelería LED - letras corpóreas 3D con iluminación', desc: 'Letras corpóreas 3D con iluminación para máxima exposición nocturna.' },
-                { title: 'Vinilos Arlon', border: 'border-azul-neon', imgBase: 'vinilos', alt: 'Vinilos Arlon - material premium para ploteos', desc: 'Materiales Arlon líderes mundiales por su durabilidad y adherencia.' },
-                { title: 'Banners frontlight', border: 'border-azul-express', imgBase: 'banners', alt: 'Banners frontlight - iluminación para máxima visibilidad', desc: 'Impresiones en gran formato y alta definición para tus ofertas.' },
-                { title: 'Microperforados', border: 'border-rojo', imgBase: 'microperforados', alt: 'Microperforados - vinilo para vidrieras con visión exterior', desc: 'Señalética industrial y vidrios decorados sin perder visión exterior.' },
+                { title: 'Ploteo Vehicular', border: 'border-azul-neon', pixelColors: '#00C3FF,#001F3F,#00C3FF', imgBase: 'ploteo', alt: 'Ploteo vehicular - transformación de flotas comerciales', desc: 'Transformación y rotulación de flotas comerciales completas.' },
+                { title: 'Letras Corpóreas', border: 'border-azul-neon', pixelColors: '#00C3FF,#001F3F,#00C3FF', imgBase: 'letras-corporeas', alt: 'Letras corpóreas en chapa, acrílico y polifan', desc: 'Letras en chapa, acrílico y polifan con acabados premium y alta durabilidad.' },
+                { title: 'Vidrieras y Locales', border: 'border-azul-express', pixelColors: '#0066FF,#001F3F,#0066FF', imgBase: 'vidrieras', alt: 'Vidrieras y locales - decoración de fachadas con vinilo', desc: 'Decoración de fachadas con cortes de vinilo de alta visibilidad.' },
+                { title: 'Cartelería LED', border: 'border-rojo', pixelColors: '#FF2D2D,#001F3F,#FF2D2D', imgBase: 'carteleria', alt: 'Cartelería LED - letras corpóreas 3D con iluminación', desc: 'Letras corpóreas 3D con iluminación para máxima exposición nocturna.' },
+                { title: 'Vinilos Arlon', border: 'border-azul-neon', pixelColors: '#00C3FF,#001F3F,#00C3FF', imgBase: 'vinilos', alt: 'Vinilos Arlon - material premium para ploteos', desc: 'Materiales Arlon líderes mundiales por su durabilidad y adherencia.' },
+                { title: 'Banners frontlight', border: 'border-azul-express', pixelColors: '#0066FF,#001F3F,#0066FF', imgBase: 'banners', alt: 'Banners frontlight - iluminación para máxima visibilidad', desc: 'Impresiones en gran formato y alta definición para tus ofertas.' },
+                { title: 'Microperforados', border: 'border-rojo', pixelColors: '#FF2D2D,#001F3F,#FF2D2D', imgBase: 'microperforados', alt: 'Microperforados - vinilo para vidrieras con visión exterior', desc: 'Señalética industrial y vidrios decorados sin perder visión exterior.' },
               ].map((svc, i) => (
-                <div key={i} className={`bg-fondo/80 backdrop-blur-xl rounded-none md:rounded-3xl overflow-hidden border-t-2 ${svc.border} hover:-translate-y-3 transition-all duration-500 shadow-[0_15px_40px_rgba(0,0,0,0.6)] hover:shadow-[0_20px_50px_rgba(0,195,255,0.15)] group relative`}>
+                <PixelCard 
+                  key={i} 
+                  colors={svc.pixelColors}
+                  gap={10}
+                  speed={30}
+                  className={`bg-fondo/80 backdrop-blur-xl rounded-none md:rounded-3xl overflow-hidden border-t-2 ${svc.border} hover:-translate-y-3 transition-all duration-500 shadow-[0_15px_40px_rgba(0,0,0,0.6)] hover:shadow-[0_20px_50px_rgba(0,195,255,0.15)] group relative`}
+                >
                   <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
                   <div className="relative h-56 overflow-hidden">
                     <picture>
@@ -155,7 +162,7 @@ function App() {
                       <PlusCircle size={16} /> Cotizar Proyecto
                     </a>
                   </div>
-                </div>
+                </PixelCard>
               ))}
             </div>
           </div>
