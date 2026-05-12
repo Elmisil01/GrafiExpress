@@ -1,4 +1,6 @@
 import React from 'react'
+import Nosotros from './components/Nosotros'
+
 
 const PlusCircle = ({ size = 24, className = "" }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}><circle cx="12" cy="12" r="10" /><path d="M8 12h8" /><path d="M12 8v8" /></svg>
@@ -30,6 +32,7 @@ function App() {
           </div>
           <nav className="hidden md:flex gap-6 font-semibold">
             <a href="#inicio" className="text-azul-neon">Inicio</a>
+            <a href="#nosotros" className="hover:text-azul-neon transition-colors">Nosotros</a>
             <a href="#servicios" className="hover:text-azul-neon transition-colors">Servicios</a>
             <a href="#contacto" className="hover:text-azul-neon transition-colors">Contacto</a>
           </nav>
@@ -74,6 +77,8 @@ function App() {
           </div>
         </section>
 
+        <Nosotros />
+
         {/* Services Grid */}
         <section id="servicios" className="py-24 bg-negro-profundo px-6">
           <div className="max-w-7xl mx-auto">
@@ -102,12 +107,12 @@ function App() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
                 { title: 'Ploteo Vehicular', border: 'border-azul-neon', imgBase: 'ploteo', alt: 'Ploteo vehicular - transformación de flotas comerciales', desc: 'Transformación y rotulación de flotas comerciales completas.' },
+                { title: 'Letras Corpóreas', border: 'border-azul-neon', imgBase: 'letras-corporeas', alt: 'Letras corpóreas en chapa, acrílico y polifan', desc: 'Letras en chapa, acrílico y polifan con acabados premium y alta durabilidad.' },
                 { title: 'Vidrieras y Locales', border: 'border-azul-express', imgBase: 'vidrieras', alt: 'Vidrieras y locales - decoración de fachadas con vinilo', desc: 'Decoración de fachadas con cortes de vinilo de alta visibilidad.' },
                 { title: 'Cartelería LED', border: 'border-rojo', imgBase: 'carteleria', alt: 'Cartelería LED - letras corpóreas 3D con iluminación', desc: 'Letras corpóreas 3D con iluminación para máxima exposición nocturna.' },
                 { title: 'Vinilos Arlon', border: 'border-azul-neon', imgBase: 'vinilos', alt: 'Vinilos Arlon - material premium para ploteos', desc: 'Materiales Arlon líderes mundiales por su durabilidad y adherencia.' },
                 { title: 'Banners frontlight', border: 'border-azul-express', imgBase: 'banners', alt: 'Banners frontlight - iluminación para máxima visibilidad', desc: 'Impresiones en gran formato y alta definición para tus ofertas.' },
                 { title: 'Microperforados', border: 'border-rojo', imgBase: 'microperforados', alt: 'Microperforados - vinilo para vidrieras con visión exterior', desc: 'Señalética industrial y vidrios decorados sin perder visión exterior.' },
-                { title: 'Letras Corpóreas', border: 'border-azul-neon', imgBase: 'letras-corporeas', alt: 'Letras corpóreas en chapa, acrílico y polifan', desc: 'Letras en chapa, acrílico y polifan con acabados premium y alta durabilidad.' },
               ].map((svc, i) => (
                 <div key={i} className={`bg-fondo/80 backdrop-blur-xl rounded-none md:rounded-3xl overflow-hidden border-t-2 ${svc.border} hover:-translate-y-3 transition-all duration-500 shadow-[0_15px_40px_rgba(0,0,0,0.6)] hover:shadow-[0_20px_50px_rgba(0,195,255,0.15)] group relative`}>
                   <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
