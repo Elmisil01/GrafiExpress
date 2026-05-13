@@ -123,7 +123,7 @@ function App() {
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <div className="flex flex-col justify-center">
             <a href="#inicio" className="flex items-center">
-              <img src="/images/logo.webp" alt="GrafiExpress — Ploteos y Cartelería Profesional" width="307" height="100" className="h-10 w-auto" loading="lazy" decoding="async" />
+              <img src="/images/logo-navbar.webp" alt="GrafiExpress — Ploteos y Cartelería Profesional" className="h-8 md:h-10 w-auto" loading="lazy" decoding="async" />
             </a>
           </div>
           <nav className="hidden md:flex gap-6 font-semibold">
@@ -310,14 +310,6 @@ function App() {
                     desc: "Letras corpóreas 3D con iluminación para máxima exposición nocturna.",
                   },
                   {
-                    title: "Vinilos Arlon",
-                    border: "border-azul-neon",
-                    pixelColors: "#00C3FF,#001F3F,#00C3FF",
-                    imgBase: "vinilos",
-                    alt: "Vinilos Arlon - material premium para ploteos",
-                    desc: "Materiales Arlon líderes mundiales por su durabilidad y adherencia.",
-                  },
-                  {
                     title: "Banners frontlight",
                     border: "border-azul-express",
                     pixelColors: "#0066FF,#001F3F,#0066FF",
@@ -406,7 +398,7 @@ function App() {
               <div>
                 <div className="mb-6">
                   <a href="#inicio" className="inline-block">
-                    <img src="/images/logo.webp" alt="GrafiExpress — Ploteos y Cartelería Profesional" width="307" height="100" className="h-12 w-auto opacity-90 hover:opacity-100 transition-opacity" loading="lazy" decoding="async" />
+                    <img src="/images/logo-footer.webp" alt="GrafiExpress — Ploteos y Cartelería Profesional" className="h-20 md:h-24 w-auto opacity-90 hover:opacity-100 transition-opacity" loading="lazy" decoding="async" />
                   </a>
                 </div>
                 <p className="text-gris-claro/60 mb-6">

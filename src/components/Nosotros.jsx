@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const cards = [
   {
@@ -55,7 +55,6 @@ const Nosotros = () => {
       </div>
 
       <div className="max-w-6xl mx-auto relative z-10">
-
         {/* Encabezado */}
         <div className="mb-12">
           <p className="text-naranja text-xs font-bold tracking-[3px] uppercase mb-2">
@@ -76,12 +75,13 @@ const Nosotros = () => {
 
         {/* Grid principal: texto izq, cards der */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
-
           {/* Columna izquierda — texto */}
           <div className="space-y-5">
             <p className="text-slate-400 text-base leading-relaxed">
               GrafiExpress nació como un proyecto familiar en{" "}
-              <span className="text-white font-semibold">Empalme San Vicente</span>{" "}
+              <span className="text-white font-semibold">
+                Empalme San Vicente
+              </span>{" "}
               y creció de la misma manera: trabajo a trabajo, cliente a cliente.
               Lo que empezó con el padre en la gráfica se convirtió en un oficio
               que hoy maneja toda la familia, con el mismo nivel de exigencia
@@ -95,9 +95,11 @@ const Nosotros = () => {
                 materiales de primera línea
               </span>{" "}
               —{" "}
-              <span className="text-azul-neon">vinilos Arlon</span>, tintas de
-              exteriores, estructuras que aguantan sol, lluvia y tiempo. No hay
-              atajos en lo que hacemos.
+              <span className="text-azul-neon">
+                vinilos de alta performance
+              </span>
+              , tintas de exteriores, estructuras que aguantan sol, lluvia y
+              tiempo. No hay atajos en lo que hacemos.
             </p>
 
             <p className="text-slate-400 text-base leading-relaxed">
@@ -167,9 +169,7 @@ const Nosotros = () => {
                 >
                   <span
                     className={`w-1.5 h-1.5 rounded-full flex-shrink-0 ${
-                      s.color === "orange"
-                        ? "bg-naranja"
-                        : "bg-azul-neon"
+                      s.color === "orange" ? "bg-naranja" : "bg-azul-neon"
                     }`}
                   />
                   {s.label}
@@ -177,7 +177,6 @@ const Nosotros = () => {
               ))}
             </div>
           </div>
-
         </div>
       </div>
     </section>
