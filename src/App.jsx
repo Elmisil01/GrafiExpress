@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Nosotros from "./components/Nosotros";
 import PixelCard from "./components/PixelCard";
 import FAQ from "./components/FAQ";
@@ -116,6 +116,12 @@ const Facebook = ({ size = 24, className = "", ...props }) => (
 );
 
 function App() {
+  useEffect(() => {
+    const root = document.getElementById('root');
+    root.style.transition = 'opacity 0.3s ease';
+    root.style.opacity = '1';
+  }, []);
+
   return (
     <div className="min-h-screen flex flex-col">
       {/* Header */}
