@@ -17,13 +17,13 @@
   <meta property="og:url" content="https://grafiexpress.vercel.app/" />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="es_AR" />
-  <meta property="og:image" content="https://grafiexpress.vercel.app/images/hero-poster.webp" />
+  <meta property="og:image" content="https://grafiexpress.vercel.app/images/ploteo.webp" />
 
   <!-- TWITTER CARD -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="GrafiExpress — Ploteos &amp; Cartelería" />
   <meta name="twitter:description" content="Empresa gráfica en San Vicente GBA. Ploteo vehicular, cartelería LED, vinilos Arlon." />
-  <meta name="twitter:image" content="https://grafiexpress.vercel.app/images/hero-poster.webp" />
+  <meta name="twitter:image" content="https://grafiexpress.vercel.app/images/ploteo.webp" />
 
   <!-- ROBOTS -->
   <meta name="robots" content="index, follow" />
@@ -53,7 +53,7 @@
           "@type": "ImageObject",
           "url": "https://grafiexpress.vercel.app/favicon.svg"
         },
-        "image": "https://grafiexpress.vercel.app/images/hero-poster.webp",
+        "image": "https://grafiexpress.vercel.app/images/ploteo.webp",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Empalme San Vicente",
@@ -177,134 +177,290 @@
               "@type": "Answer",
               "text": "Sí. GrafiExpress está especializada en ploteo vehicular, desde un calco simple hasta la rotulación completa de flotas comerciales."
             }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuánto dura un ploteo vehicular con vinilo Arlon?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Con vinilos Arlon de primera línea, entre 5 y 7 años en condiciones normales de uso. Materiales de menor calidad pueden durar 2-3 años."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Se puede sacar un ploteo vehicular sin dañar la pintura?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. Los vinilos de calidad están diseñados para removerse sin dejar marca en la pintura original, siempre que se retiren correctamente con calor y técnica adecuada."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuánto dura una cartelería LED?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Las letras corpóreas LED tienen una vida útil de entre 30.000 y 50.000 horas de encendido, lo que equivale a más de 10 años en uso normal."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Hacen diseño o necesito llevar el arte terminado?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Podés traer el arte terminado o solo la idea. Si necesitás diseño lo coordinamos. Avisanos cuando pedís el presupuesto para incluirlo en la cotización."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Tienen factura?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. Somos una empresa habilitada bajo Resolución 5-E/2018. Trabajamos con factura sin problema."
+            }
           }
         ]
       }
     ]
   }
   </script>
+
+  <style>
+    /* Estilos mínimos para el contenido estático — evita FOUC antes que React hidrate */
+    #root-static {
+      display: none;
+    }
+    body {
+      background-color: #0A1328;
+      color: #f0f0f0;
+      margin: 0;
+      font-family: system-ui, -apple-system, sans-serif;
+    }
+  </style>
 </head>
 <body style="background-color: #0A1328; color: white; margin: 0;">
   <div id="root">
     <!--
       CONTENIDO ESTÁTICO PARA BOTS DE IA Y CRAWLERS.
+      Visible en el HTML para máxima legibilidad por bots.
       React reemplaza este bloque al hidratarse. En browsers, la espera es de milisegundos.
     -->
-    <div style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;">
-      <header>
-        <nav aria-label="Navegación principal">
-          <a href="/">
-            GrafiExpress — Ploteos y Cartelería
-          </a>
-          <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#nosotros">Nosotros</a></li>
-            <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#faq">FAQ</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-          </ul>
+    <header style="background:#0A1328;padding:16px 24px;border-bottom:1px solid rgba(255,255,255,0.1);">
+      <nav aria-label="Navegación principal" style="display:flex;justify-content:space-between;align-items:center;max-width:1280px;margin:0 auto;">
+        <a href="/" style="color:white;text-decoration:none;font-weight:bold;font-size:1.1rem;">
+          <img src="/favicon.svg" alt="GrafiExpress — Ploteos y Cartelería Profesional" width="40" height="40" style="vertical-align:middle;" />
+          GrafiExpress
+        </a>
+        <ul style="list-style:none;display:flex;gap:20px;margin:0;padding:0;">
+          <li><a href="#inicio" style="color:#f0f0f0;text-decoration:none;">Inicio</a></li>
+          <li><a href="#nosotros" style="color:#f0f0f0;text-decoration:none;">Nosotros</a></li>
+          <li><a href="#servicios" style="color:#f0f0f0;text-decoration:none;">Servicios</a></li>
+          <li><a href="#trabajos" style="color:#f0f0f0;text-decoration:none;">Trabajos</a></li>
+          <li><a href="#faq" style="color:#f0f0f0;text-decoration:none;">FAQ</a></li>
+          <li><a href="#contacto" style="color:#f0f0f0;text-decoration:none;">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main style="max-width:1280px;margin:0 auto;padding:24px;">
+
+      <!-- H1 ÚNICO — crítico para SEO y AI visibility -->
+      <section id="inicio" aria-label="Inicio" style="padding:40px 0 24px;">
+        <h1 style="font-size:2rem;margin-bottom:16px;">GrafiExpress — Ploteos &amp; Cartelería Profesional en San Vicente</h1>
+        <p>Soluciones gráficas para empresas y comercios en la zona sur del Gran Buenos Aires. Ploteo vehicular, cartelería LED, vinilos Arlon, vidrieras, banners y microperforados. Empresa familiar con más de una década en el rubro gráfico.</p>
+        <a href="https://wa.me/5491154582487" style="color:#00C3FF;">Contactar ahora por WhatsApp</a>
+        &nbsp;|&nbsp;
+        <a href="#servicios" style="color:#00C3FF;">Ver nuestros servicios</a>
+
+        <!-- Badges de autoridad visibles para bots -->
+        <ul aria-label="Credenciales y certificaciones" style="margin-top:20px;padding-left:20px;">
+          <li>&#10003; Empresa verificada — Habilitación Res. 5-E/2018</li>
+          <li>&#10003; +20 clientes activos en zona sur GBA</li>
+          <li>&#10003; Vinilos Arlon certificados — líderes mundiales en gráfica</li>
+          <li>&#10003; Más de una década en el rubro gráfico publicitario</li>
+          <li>&#10003; Presupuesto sin cargo — precio cerrado sin sorpresas</li>
+        </ul>
+      </section>
+
+      <!-- NOSOTROS -->
+      <section id="nosotros" aria-label="Quiénes somos" style="padding:32px 0;">
+        <h2>Más de una década en la gráfica</h2>
+        <p>GrafiExpress nació como un proyecto familiar en Empalme San Vicente y creció trabajo a trabajo, cliente a cliente. Lo que empezó con el padre en la gráfica se convirtió en un oficio que hoy maneja toda la familia, con el mismo nivel de exigencia desde el primer día.</p>
+        <p>Trabajamos con materiales de primera línea: vinilos Arlon, tintas UV y estructuras para exteriores que aguantan sol, lluvia y tiempo. Presupuesto cerrado, sin sorpresas.</p>
+        <ul>
+          <li>Empresa familiar con trayectoria — Habilitación Res. 5-E/2018</li>
+          <li>Materiales certificados: Vinilos Arlon, tintas UV para exteriores</li>
+          <li>Cobertura: San Vicente, Cañuelas, Brandsen, La Plata y zona sur GBA</li>
+          <li>Presupuesto sin cargo — sin costos ocultos</li>
+        </ul>
+      </section>
+
+      <!-- SERVICIOS -->
+      <section id="servicios" aria-label="Nuestros servicios" style="padding:32px 0;">
+        <h2>Nuestros Servicios</h2>
+        <p>Soluciones premium con la mejor durabilidad gráfica para empresas y comercios de la zona sur del Gran Buenos Aires.</p>
+        <ul>
+          <li>
+            <h3>Ploteo Vehicular</h3>
+            <p>Transformación y rotulación de flotas comerciales completas. Trabajamos con vinilos Arlon de alta durabilidad para resultados que duran entre 5 y 7 años.</p>
+          </li>
+          <li>
+            <h3>Letras Corpóreas</h3>
+            <p>Letras en chapa, acrílico y polifan con acabados premium y alta durabilidad. Diseño industrial para locales y empresas.</p>
+          </li>
+          <li>
+            <h3>Vidrieras y Locales</h3>
+            <p>Decoración de fachadas con cortes de vinilo de alta visibilidad para comercios en San Vicente y zona sur GBA.</p>
+          </li>
+          <li>
+            <h3>Cartelería LED</h3>
+            <p>Letras corpóreas 3D con iluminación LED para máxima exposición nocturna de tu local o empresa. Vida útil de 30.000 a 50.000 horas.</p>
+          </li>
+          <li>
+            <h3>Vinilos Arlon</h3>
+            <p>Material certificado líder mundial para ploteos de larga duración en exteriores. Resistente a UV, lluvia y lavado frecuente.</p>
+          </li>
+          <li>
+            <h3>Banners Frontlight</h3>
+            <p>Impresión de gran formato con material traslúcido para iluminación frontal. Máximo impacto visual en vía pública.</p>
+          </li>
+          <li>
+            <h3>Microperforados</h3>
+            <p>Vinilo microperforado para vidrieras que preserva la visión exterior desde adentro del local.</p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- TRABAJOS REALIZADOS -->
+      <section id="trabajos" aria-label="Trabajos realizados" style="padding:32px 0;">
+        <h2>Trabajos Realizados</h2>
+        <p>Portfolio de ploteos vehiculares, cartelería LED, vidrieras y más en San Vicente y zona sur del Gran Buenos Aires. Cada proyecto refleja el mismo nivel de exigencia, sin importar el tamaño del trabajo.</p>
+        <ul>
+          <li>
+            <h3>Flota comercial rotulada</h3>
+            <p>Ploteo Vehicular — Rotulación completa de camioneta con vinilo Arlon de alta duración. San Vicente, Buenos Aires.</p>
+          </li>
+          <li>
+            <h3>Letras corpóreas iluminadas</h3>
+            <p>Cartelería LED — Letras 3D con iluminación LED para local comercial. Máxima visibilidad nocturna.</p>
+          </li>
+          <li>
+            <h3>Vidriera decorativa con corte de vinilo</h3>
+            <p>Vidrieras y Locales — Decoración de frente de local con vinilo de corte. Entrega en 48 horas.</p>
+          </li>
+          <li>
+            <h3>Ploteo con vinilo Arlon premium</h3>
+            <p>Vinilos Arlon — Ploteo de alta durabilidad para exterior con material Arlon certificado.</p>
+          </li>
+          <li>
+            <h3>Banner de gran formato iluminado</h3>
+            <p>Banners Frontlight — Banner frontlight para máxima visibilidad en vía pública.</p>
+          </li>
+          <li>
+            <h3>Señalética con microperforado</h3>
+            <p>Microperforados — Señalética en vidriera con vinilo microperforado. Visión exterior preservada.</p>
+          </li>
+        </ul>
+        <p><a href="https://wa.me/5491154582487?text=Hola%20GrafiExpress%2C%20quiero%20ver%20m%C3%A1s%20trabajos%20realizados." style="color:#00C3FF;">Ver más trabajos por WhatsApp</a></p>
+      </section>
+
+      <!-- TESTIMONIOS -->
+      <section id="testimonios" aria-label="Testimonios de clientes" style="padding:32px 0;">
+        <h2>Lo que dicen nuestros clientes</h2>
+        <ul>
+          <li>
+            <blockquote>
+              <p>"Plotearon toda mi flota de camionetas. El vinilo Arlon aguantó un año de uso intensivo sin despegarse. Muy prolijamente trabajado."</p>
+              <cite>— Martín G., Transporte MG, San Vicente — Servicio: Ploteo Vehicular ★★★★★</cite>
+            </blockquote>
+          </li>
+          <li>
+            <blockquote>
+              <p>"Las letras corpóreas quedaron espectaculares. De noche con el LED se ve desde lejos. Cumplieron en tiempo y forma, presupuesto cerrado como prometieron."</p>
+              <cite>— Carla R., Local de ropa, Cañuelas — Servicio: Cartelería LED ★★★★★</cite>
+            </blockquote>
+          </li>
+          <li>
+            <blockquote>
+              <p>"Necesitaba la vidriera decorada para una promoción y la entregaron en 48hs. Muy buena atención y el resultado fue mejor de lo que esperaba."</p>
+              <cite>— Diego P., Ferretería, La Plata — Servicio: Vidrieras y Locales ★★★★★</cite>
+            </blockquote>
+          </li>
+        </ul>
+      </section>
+
+      <!-- FAQ COMPLETO -->
+      <section id="faq" aria-label="Preguntas frecuentes" style="padding:32px 0;">
+        <h2>Preguntas Frecuentes</h2>
+        <dl>
+          <dt>¿En qué zona trabajan?</dt>
+          <dd>Trabajamos en San Vicente y toda la zona sur del Gran Buenos Aires: Cañuelas, Brandsen, La Plata y alrededores. Coordinamos la instalación en el lugar que necesitás.</dd>
+
+          <dt>¿El presupuesto tiene costo?</dt>
+          <dd>No. El presupuesto es sin cargo. Lo que acordamos es lo que se cobra, sin costos ocultos ni sorpresas al final del trabajo.</dd>
+
+          <dt>¿Cuánto dura un ploteo vehicular?</dt>
+          <dd>Con vinilos Arlon de primera línea, entre 5 y 7 años en condiciones normales de uso. Materiales de menor calidad pueden durar 2-3 años.</dd>
+
+          <dt>¿Qué es el vinilo Arlon y por qué es mejor?</dt>
+          <dd>Arlon es una marca líder mundial en vinilos para gráfica publicitaria. Sus materiales tienen mayor resistencia UV, mejor adhesión a largo plazo y menor riesgo de burbujas o desprendimientos.</dd>
+
+          <dt>¿Se puede sacar un ploteo vehicular sin dañar la pintura?</dt>
+          <dd>Sí. Los vinilos de calidad están diseñados para removerse sin dejar marca en la pintura original, siempre que se retiren correctamente con calor y técnica adecuada.</dd>
+
+          <dt>¿Cómo se limpia un vehículo ploteado?</dt>
+          <dd>Con agua y jabón neutro, sin presión alta de agua. Evitar el lavado a presión directamente sobre los bordes del vinilo. No usar disolventes ni alcohol.</dd>
+
+          <dt>¿Cuánto dura una cartelería LED?</dt>
+          <dd>Las letras corpóreas LED tienen una vida útil de entre 30.000 y 50.000 horas de encendido, lo que equivale a más de 10 años en uso normal.</dd>
+
+          <dt>¿Qué diferencia hay entre banner lona y frontlight?</dt>
+          <dd>La lona es un banner estándar sin iluminación. El frontlight es un material traslúcido para iluminarse desde el frente, con mayor impacto visual nocturno.</dd>
+
+          <dt>¿Hacen diseño o necesito llevar el arte terminado?</dt>
+          <dd>Podés traer el arte terminado o solo la idea. Si necesitás diseño lo coordinamos. Avisanos cuando pedís el presupuesto para incluirlo en la cotización.</dd>
+
+          <dt>¿Hacen instalación o solo fabricación?</dt>
+          <dd>Hacemos las dos cosas. Fabricamos e instalamos en la zona sur del GBA.</dd>
+
+          <dt>¿Tienen factura?</dt>
+          <dd>Sí. Somos una empresa habilitada bajo Resolución 5-E/2018. Trabajamos con factura sin problema.</dd>
+
+          <dt>¿Cuál es el mínimo de pedido?</dt>
+          <dd>No hay un mínimo formal. Trabajamos desde calcos simples hasta flotas completas.</dd>
+        </dl>
+      </section>
+
+      <!-- CONTACTO -->
+      <section id="contacto" aria-label="Contacto" style="padding:32px 0;">
+        <h2>Contacto</h2>
+        <address>
+          <p>Teléfono / WhatsApp: <a href="tel:+5491154582487" style="color:#00C3FF;">011 15-5458-2487</a></p>
+          <p>Email: <a href="mailto:Grafi_express@hotmail.com" style="color:#00C3FF;">Grafi_express@hotmail.com</a></p>
+          <p>Ubicación: Empalme San Vicente, San Vicente, Zona Sur del Gran Buenos Aires</p>
+        </address>
+        <nav aria-label="Redes sociales">
+          <a href="https://instagram.com/grafiexpresscalcos" aria-label="GrafiExpress en Instagram" rel="noopener noreferrer" style="color:#00C3FF;">Instagram @grafiexpresscalcos</a>
+          &nbsp;|&nbsp;
+          <a href="https://facebook.com/GRAFIEXPRESS" aria-label="GrafiExpress en Facebook" rel="noopener noreferrer" style="color:#00C3FF;">Facebook GRAFIEXPRESS</a>
         </nav>
-      </header>
+      </section>
 
-      <main>
-        <!-- H1 ÚNICO — crítico para SEO y AI visibility -->
-        <section id="inicio" aria-label="Inicio">
-          <h1>GrafiExpress — Ploteos &amp; Cartelería Profesional en San Vicente</h1>
-          <p>Soluciones gráficas para empresas y comercios en la zona sur del Gran Buenos Aires. Ploteo vehicular, cartelería LED, vinilos Arlon, vidrieras, banners y microperforados. Empresa familiar con más de una década en el rubro gráfico.</p>
-          <a href="https://wa.me/5491154582487">Contactar ahora</a>
-          <a href="#servicios">Ver trabajos</a>
-        </section>
+    </main>
 
-        <!-- NOSOTROS -->
-        <section id="nosotros" aria-label="Quiénes somos">
-          <h2>Más de una década en la gráfica</h2>
-          <p>GrafiExpress nació como un proyecto familiar en Empalme San Vicente y creció trabajo a trabajo, cliente a cliente. Lo que empezó con el padre en la gráfica se convirtió en un oficio que hoy maneja toda la familia, con el mismo nivel de exigencia desde el primer día.</p>
-          <p>Trabajamos con materiales de primera línea: vinilos Arlon, tintas UV y estructuras para exteriores que aguantan sol, lluvia y tiempo. Presupuesto cerrado, sin sorpresas.</p>
-          <ul>
-            <li>Empresa familiar con trayectoria — Habilitación Res. 5-E/2018</li>
-            <li>Materiales certificados: Vinilos Arlon, tintas UV para exteriores</li>
-            <li>Cobertura: San Vicente, Cañuelas, Brandsen, La Plata y zona sur GBA</li>
-            <li>Presupuesto sin cargo — sin costos ocultos</li>
-          </ul>
-        </section>
-
-        <!-- SERVICIOS -->
-        <section id="servicios" aria-label="Nuestros servicios">
-          <h2>Nuestros Servicios</h2>
-          <p>Soluciones premium con la mejor durabilidad gráfica.</p>
-          <ul>
-            <li>
-              <h3>Ploteo Vehicular</h3>
-              <p>Transformación y rotulación de flotas comerciales completas.</p>
-            </li>
-            <li>
-              <h3>Letras Corpóreas</h3>
-              <p>Letras en chapa, acrílico y polifan con acabados premium y alta durabilidad.</p>
-            </li>
-            <li>
-              <h3>Vidrieras y Locales</h3>
-              <p>Decoración de fachadas con cortes de vinilo de alta visibilidad.</p>
-            </li>
-            <li>
-              <h3>Cartelería LED</h3>
-              <p>Letras corpóreas 3D con iluminación para máxima exposición nocturna.</p>
-            </li>
-            <li>
-              <h3>Vinilos Arlon</h3>
-              <p>Material premium para ploteos de larga duración en exteriores.</p>
-            </li>
-            <li>
-              <h3>Banners Frontlight</h3>
-              <p>Impresión de gran formato con iluminación frontal para máxima visibilidad.</p>
-            </li>
-            <li>
-              <h3>Microperforados</h3>
-              <p>Vinilo microperforado para vidrieras con visión exterior desde adentro.</p>
-            </li>
-          </ul>
-        </section>
-
-        <!-- FAQ -->
-        <section id="faq" aria-label="Preguntas frecuentes">
-          <h2>Preguntas frecuentes</h2>
-          <dl>
-            <dt>¿En qué zona trabajan?</dt>
-            <dd>Trabajamos en San Vicente y toda la zona sur del Gran Buenos Aires: Cañuelas, Brandsen, La Plata y alrededores. Coordinamos la instalación en el lugar que necesitás.</dd>
-            <dt>¿El presupuesto tiene costo?</dt>
-            <dd>No. El presupuesto es sin cargo. Lo que acordamos es lo que se cobra — sin costos ocultos ni sorpresas al final del trabajo.</dd>
-            <dt>¿Qué materiales usan?</dt>
-            <dd>Trabajamos con vinilos Arlon, tintas UV y materiales certificados para exteriores. No usamos materiales de baja calidad — lo que instalamos tiene que durar.</dd>
-            <dt>¿Hacen ploteo de flotas completas?</dt>
-            <dd>Sí. Desde el calco de una moto hasta la rotulación completa de flotas de camiones. Cada trabajo tiene el mismo cuidado, sin importar el tamaño.</dd>
-            <dt>¿Cuánto tarda un ploteo vehicular?</dt>
-            <dd>Un ploteo parcial puede estar listo en 24-48 horas. Siempre acordamos el plazo antes de empezar.</dd>
-          </dl>
-        </section>
-
-        <!-- CONTACTO -->
-        <section id="contacto" aria-label="Contacto">
-          <h2>Contacto</h2>
-          <address>
-            <p>Teléfono: <a href="tel:+5491154582487">011 15-5458-2487</a></p>
-            <p>Email: <a href="mailto:Grafi_express@hotmail.com">Grafi_express@hotmail.com</a></p>
-            <p>Ubicación: Empalme San Vicente, San Vicente, Zona Sur del Gran Buenos Aires</p>
-          </address>
-          <nav aria-label="Redes sociales">
-            <a href="https://instagram.com/grafiexpresscalcos" aria-label="GrafiExpress en Instagram" rel="noopener noreferrer">Instagram</a>
-            <a href="https://facebook.com/GRAFIEXPRESS" aria-label="GrafiExpress en Facebook" rel="noopener noreferrer">Facebook</a>
-          </nav>
-        </section>
-      </main>
-
-      <footer>
-        <p>© 2026 GrafiExpress. Todos los derechos reservados.</p>
-        <p>Hecho por <a href="https://pablochamarez.com.ar">pablochamarez.com.ar</a></p>
-      </footer>
-    </div>
+    <footer style="background:#050D1A;padding:24px;border-top:1px solid rgba(255,255,255,0.1);">
+      <nav aria-label="Links del sitio" style="margin-bottom:12px;">
+        <a href="#inicio" style="color:#00C3FF;margin-right:16px;">Inicio</a>
+        <a href="#nosotros" style="color:#00C3FF;margin-right:16px;">Quiénes somos</a>
+        <a href="#servicios" style="color:#00C3FF;margin-right:16px;">Servicios</a>
+        <a href="#trabajos" style="color:#00C3FF;margin-right:16px;">Trabajos</a>
+        <a href="#faq" style="color:#00C3FF;margin-right:16px;">Preguntas frecuentes</a>
+        <a href="#contacto" style="color:#00C3FF;">Contacto</a>
+      </nav>
+      <p style="margin:0 0 4px;">© 2026 GrafiExpress. Todos los derechos reservados.</p>
+      <p style="margin:0;font-size:0.8rem;opacity:0.6;">Diseño por <a href="https://pablochamarez.com.ar" style="color:#00C3FF;">pablochamarez.com.ar</a></p>
+    </footer>
   </div>
 
   <script type="module" src="/src/main.jsx"></script>
 </body>
-</html>
-
 </html>

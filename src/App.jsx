@@ -123,7 +123,7 @@ function App() {
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <div className="flex flex-col justify-center">
             <a href="#inicio" className="flex items-center">
-              <img src="/images/logo.webp" alt="GrafiExpress Logo" width="307" height="100" className="h-10 w-auto" loading="lazy" decoding="async" />
+              <img src="/images/logo.webp" alt="GrafiExpress — Ploteos y Cartelería Profesional" width="307" height="100" className="h-10 w-auto" loading="lazy" decoding="async" />
             </a>
           </div>
           <nav className="hidden md:flex gap-6 font-semibold">
@@ -406,7 +406,7 @@ function App() {
               <div>
                 <div className="mb-6">
                   <a href="#inicio" className="inline-block">
-                    <img src="/images/logo.webp" alt="GrafiExpress Logo" width="307" height="100" className="h-12 w-auto opacity-90 hover:opacity-100 transition-opacity" loading="lazy" decoding="async" />
+                    <img src="/images/logo.webp" alt="GrafiExpress — Ploteos y Cartelería Profesional" width="307" height="100" className="h-12 w-auto opacity-90 hover:opacity-100 transition-opacity" loading="lazy" decoding="async" />
                   </a>
                 </div>
                 <p className="text-gris-claro/60 mb-6">

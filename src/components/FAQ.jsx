@@ -10,19 +10,54 @@ const preguntas = [
       "No. El presupuesto es sin cargo. Lo que acordamos es lo que se cobra — sin costos ocultos ni sorpresas al final del trabajo.",
   },
   {
-    pregunta: "¿Qué materiales usan?",
+    pregunta: "¿Cuánto dura un ploteo vehicular?",
     respuesta:
-      "Trabajamos con vinilos Arlon, tintas UV y materiales certificados para exteriores. No usamos materiales de baja calidad — lo que instalamos tiene que durar.",
+      "Con vinilos Arlon de primera línea, entre 5 y 7 años en condiciones normales de uso. Materiales de menor calidad pueden durar 2-3 años.",
   },
   {
-    pregunta: "¿Hacen ploteo de flotas completas?",
+    pregunta: "¿Qué es el vinilo Arlon y por qué es mejor?",
     respuesta:
-      "Sí. Desde el calco de una moto hasta la rotulación completa de flotas de camiones. Cada trabajo tiene el mismo cuidado, sin importar el tamaño.",
+      "Arlon es una marca líder mundial en vinilos para gráfica publicitaria. Sus materiales tienen mayor resistencia UV, mejor adhesión a largo plazo y menor riesgo de burbujas o desprendimientos.",
   },
   {
-    pregunta: "¿Cuánto tarda un ploteo vehicular?",
+    pregunta: "¿Se puede sacar un ploteo vehicular sin dañar la pintura?",
     respuesta:
-      "Un ploteo parcial puede estar listo en 24-48 horas. Una flota completa puede llevar más tiempo dependiendo de la cantidad de vehículos. Siempre acordamos el plazo antes de empezar.",
+      "Sí. Los vinilos de calidad están diseñados para removerse sin dejar marca en la pintura original, siempre que se retiren correctamente con calor y técnica adecuada.",
+  },
+  {
+    pregunta: "¿Cómo se limpia un vehículo ploteado?",
+    respuesta:
+      "Con agua y jabón neutro, sin presión alta de agua. Evitar el lavado a presión directamente sobre los bordes del vinilo. No usar disolventes ni alcohol.",
+  },
+  {
+    pregunta: "¿Cuánto dura una cartelería LED?",
+    respuesta:
+      "Las letras corpóreas LED tienen una vida útil de entre 30.000 y 50.000 horas de encendido, lo que equivale a más de 10 años en uso normal.",
+  },
+  {
+    pregunta: "¿Qué diferencia hay entre banner lona y frontlight?",
+    respuesta:
+      "La lona es un banner estándar sin iluminación. El frontlight es un material traslúcido para iluminarse desde el frente, con mayor impacto visual nocturno.",
+  },
+  {
+    pregunta: "¿Hacen diseño o necesito llevar el arte terminado?",
+    respuesta:
+      "Podés traer el arte terminado o solo la idea. Si necesitás diseño lo coordinamos. Avisanos cuando pedís el presupuesto para incluirlo en la cotización.",
+  },
+  {
+    pregunta: "¿Hacen instalación o solo fabricación?",
+    respuesta:
+      "Hacemos las dos cosas. Fabricamos e instalamos en la zona sur del GBA.",
+  },
+  {
+    pregunta: "¿Tienen factura?",
+    respuesta:
+      "Sí. Somos una empresa habilitada bajo Resolución 5-E/2018. Trabajamos con factura sin problema.",
+  },
+  {
+    pregunta: "¿Cuál es el mínimo de pedido?",
+    respuesta:
+      "No hay un mínimo formal. Trabajamos desde calcos simples hasta flotas completas.",
   },
 ];
 
