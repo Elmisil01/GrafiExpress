@@ -2,6 +2,8 @@ import React from "react";
 import Nosotros from "./components/Nosotros";
 import PixelCard from "./components/PixelCard";
 import FAQ from "./components/FAQ";
+import Galeria from "./components/Galeria";
+import Testimonios from "./components/Testimonios";
 import WhatsAppButton from "./components/WhatsAppButton";
 
 const PlusCircle = ({ size = 24, className = "", ...props }) => (
@@ -139,6 +141,12 @@ function App() {
               className="hover:text-azul-neon transition-colors"
             >
               Servicios
+            </a>
+            <a
+              href="#trabajos"
+              className="hover:text-azul-neon transition-colors"
+            >
+              Trabajos
             </a>
             <a
               href="#faq"
@@ -381,7 +389,9 @@ function App() {
             </div>
           </section>
 
-          <FAQ />
+          <Galeria />
+        <Testimonios />
+        <FAQ />
 
           {/* Footer */}
           <footer
