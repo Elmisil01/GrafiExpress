@@ -120,11 +120,9 @@ function App() {
       <header className="bg-negro-profundo/50 backdrop-blur-xl border-b border-white/10 py-4 px-6 fixed w-full top-0 z-50 transition-all duration-500 hover:bg-negro-profundo/80">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <div className="flex flex-col justify-center">
-            {/* Medida recomendada para imagen de logo futura: Altura 40px, Ancho proporcional (aprox 160px-200px) */}
-            <span className="text-2xl font-black tracking-tighter uppercase italic">
-              <span className="text-rojo">GRAFI</span>
-              <span className="text-azul-express">EXPRESS</span>
-            </span>
+            <a href="#inicio" className="flex items-center">
+              <img src="/images/logo.webp" alt="GrafiExpress Logo" width="307" height="100" className="h-10 w-auto" loading="lazy" decoding="async" />
+            </a>
           </div>
           <nav className="hidden md:flex gap-6 font-semibold">
             <a href="#inicio" className="text-azul-neon">
@@ -397,10 +395,9 @@ function App() {
             <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 relative z-10">
               <div>
                 <div className="mb-6">
-                  <span className="text-xl font-black tracking-tighter uppercase italic">
-                    <span className="text-rojo">GRAFI</span>
-                    <span className="text-azul-express">EXPRESS</span>
-                  </span>
+                  <a href="#inicio" className="inline-block">
+                    <img src="/images/logo.webp" alt="GrafiExpress Logo" width="307" height="100" className="h-12 w-auto opacity-90 hover:opacity-100 transition-opacity" loading="lazy" decoding="async" />
+                  </a>
                 </div>
                 <p className="text-gris-claro/60 mb-6">
                   Calcos, Ploteos y Cartelería Profesional.
